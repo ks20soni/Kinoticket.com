@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="icon" type="image/png" href="../assets/logo.png"/>
+<!-- ------------------------------------------------------------------------------------------------ -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap"
+rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- ------------------------------------------------------------------------------------------------ -->
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Contact us</title>
+  </head>
+  <body>
+<!-- ----------------------------------------------navbar 2 ------------------------------------------ -->
+<div class="navbar">
+  <div class="left">
+    <div class="website_name">
+      <span class="logo">
+        <img class="image" src="../assets/logo.png" />
+      </span>
+      <div class="head">
+        <h2>KINO</h2>
+        <h1>tickets.com</h1>
+      </div>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search" />
+      <img src="../assets/search_logo.png" alt="" class="fa fa-search">
+    </input>
+
+  </div>
+  </div>
+  <div class="right">
+    <a href="../index.html" class="home">Home</a>
+
+    <div id="Movie">
+    <a href="../default/index.html">Movies</a>
+      <div class="sub-menu">
+        <ul>
+          <li><a href="../default/index.html"> Upcoming</a></li>
+          <li><a href="../default/index.html">Top rated</a></li>
+          <li><a href="../default/index.html">Now showing</a></li>
+        </ul>
+        </div>
+      </div>
+
+    <div id="theater">
+    <a href="../default/index.html">Theaters</a>
+      <div class="sub-menu">
+        <ul>
+          <li><a href="../default/index.html"> Near you</a></li>
+          <li><a href="../default/index.html">Top rated</a></li>
+          <li><a href="../default/index.html">Cheapest</a></li>
+        </ul>
+        </div>
+        </div>
+  
+    <div id="signin_link">
+    <a href="../authentication/signin.html" >SignIn </a>
+      <div class="sub-menu">
+      <ul>
+        <li><a href="../authentication/signup.html">Register</a> </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="user_logo">
+    <a><img src="../assets/user_logo.png" alt="" id="user_logo_img"></a>
+    <div class="sub-menu">
+      <ul>
+        <li><a href="../user/profile.html"> My Profile</a></li>
+        <li><a href="../user/booking.html">Bookings</a></li>
+        <li><a href="#"class ="logout" onclick = "logout_user()">Log out</a></li>
+        </ul>
+        </div>
+    </div>
+
+  </div>
+   <div class="hamburger">
+     <img src="../assets/hamburger.png" alt="">
+     <div class="sub-menu">
+      <ul>
+       <li><a href="../index.html"> Home
+          
+       </a></li>
+        <li><div class="dropdown"><a href="../default/index.html">Movie</a>
+          <div class="sub_menu">
+          <ul>
+            <li><a href="#"> Upcoming</a></li>
+            <li><a href="#">Top rated</a></li>
+            <li><a href="#">Now showing</a></li>
+          </ul>
+          </div>
+        </div></li>
+        <li><a href="../default/index.html"> Theaters</a></li>
+        <li id="hamburger_signin"><a href="../authentication/signin.html" > SignIn</a></li>
+        <ul id="hamburger_after_login">
+          <li><a href="../user/profile.html">My Profile</a></li>
+          <li><a href="../user/booking.html">My Bookings</a></li>
+          <li><a href="#" onclick = "logout_user()">Logout</a></li>
+        </ul>
+      </ul>
+      </div>
+   </div>
+ </div>
+<!-- ------------------------------------navbar 2 end ----------------------------------------------- -->
+      <div class="open">
+          <!-- <h3>WE ARE </h3><br> <h1>WEB GEEKS</h1> -->
+      </div>
+
+        <div id="container">
+
+      <div class="form">
+        <div class="form1">
+          <h4 class="fill">Fill the form below to contact us</h4>
+          <div class="input">
+          <input list="reasons" placeholder="Want to contact us for "/>
+          <datalist id="reasons">
+              <option value="Customer Queries"></option>
+              <option value="Business Enquiries"></option>
+              <option value="Other Queries"></option>
+          </datalist>
+          <input type="text" placeholder="NAME">
+          <!-- <br> -->
+          <input type="text"  placeholder="Organization Name (if any)">
+          <input type="text" placeholder="REGION">
+          <!-- <br> -->
+          <input type="tel" placeholder="Mobile Number">
+          <input type="text" placeholder="Email ID">
+          <!-- <br> -->
+          <button class="button">Submit</button>
+          </div>
+          </div>
+         </div>
+
+         <div class="form">
+           <div class="form2">
+
+            <h4 class="add">Reach us at</h4>
+            <p>ABV-Indian Institute of Information Technology and Management Gwalior,<br> Morena Link Road, Gwalior, Madhya Pradesh, <br>India, 474015</p>
+            </div>
+
+         </div>
+
+         </div>
+
+
+         <div class="footer">
+          <div class="kinologo_and_social">
+            <div class="kinologo">
+              <img src="../assets/logo.png" alt="">
+            </div>
+            <div class="social">
+              <img src="../assets/fb_icon.png" alt="">
+              <img src="../assets/insta_icon.png" alt="">
+              <img src="../assets/twitter_icon.png" alt="">
+            </div>
+            <div class="extra_pages">
+              <ul>
+                <li><a href="../footer/about.html">About Us</a></li>
+                <li><a href="../footer/contact.html">Contact Us</a></li>
+                <li><a href="https://docs.google.com/forms/d/1LwZKfF2qtWDiKvxxwlR1rWIIUQhAF4zVHq3MMiWC8GM/edit?ts=60e4a322">Feedback</a></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+
+    <script src="./about.js"></script>
+  </body>
+  </html>

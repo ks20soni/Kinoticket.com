@@ -1,0 +1,581 @@
+/* ----------------------------navbar font --------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+/* -----------------------navbar font end---------------------------------------------------------- */
+*{
+    margin : 0px;
+    padding : 0px
+}
+body{
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    background-color: #131a1f;
+    /* background: url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGhlYXRyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60) no-repeat center/cover; */
+}
+/* --------------------------------------- navbar 1 -------------------------------------------------- */
+.navbar{
+  width: 100%;
+  /* height: 70px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border: 2px solid red; */
+  background-color: rgb(31, 37, 51);
+  display: flex;
+}
+.left{
+  width: 60%;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+}
+.website_name{
+  display:flex;
+  color: #c9c1f0;
+  margin-left: 14px;
+}
+.logo{
+  /* border: 2px solid green; */
+  width: 40px;
+  display: flex;
+  align-items: center;
+}
+.logo .image{
+width: 100%;
+ 
+ }
+.head {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+ .head h2{
+  /* right:0px; */
+  font-family: 'Passion One', cursive;
+  /* margin-top: 0px; */
+  font-size: 40px;
+  color:rgb(252, 107, 23);
+  margin-left: 4px;
+}
+ .head h1{
+   margin-left: 2px;
+   font-family: 'Passion One', cursive;
+   margin-top: 9px;
+   color: #f3c13b;
+   font-size: 23px;
+}
+
+.search{
+  display:flex;
+  width: 50%;
+  align-items: center;
+  /* margin-left: 200px; */
+
+}
+.search input{
+  width: 100%;
+  padding: 7px;
+  /* box-sizing: border-box; */
+  border-radius: 6px;
+  margin-left: 10px;
+  background-color: rgba(255,255,255,0.8);
+  /* background-color: #dce4e1; */
+}
+.fa{
+ cursor:pointer; 
+ /* font-size:40px; */
+ filter: invert(1);
+ /* border: 2px solid red; */
+ width: 21px;
+ margin-left: 3px;
+}
+
+.right{
+  width: 40%;
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right a{
+ text-decoration: none;
+   color: #ffffff;
+ ;
+ margin-right: 40px;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 17px;
+}
+.slider_parent{
+  margin-top: 20px;
+  margin-bottom: 20px;
+display: flex;
+justify-content: center;
+/* background-color: rgb(255, 255, 255,0.2); */
+}
+.hamburger{
+  display: none;
+  width: 20%;
+  /* border: 2px solid brown; */
+  justify-content: flex-end;
+  align-items: center;
+}
+.hamburger img{
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+}
+/* #signin_link{
+  
+} */
+#user_logo{
+  display: none;
+}
+#user_logo_img{
+  margin-top: 5px;
+  width: 33px;
+}
+/* -----------------------------navbar 1 end ------------------------------------------------------- */
+.container::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+.container{
+    position: relative;
+    /* width: 800px; */
+    /* height: 500px; */
+    border: 2px solid #8b7575;
+    margin-top: 50px;
+    display: flex;
+    /* background-color: black; */
+}
+.kino_logo{
+    width: 400px;
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-right: 2px solid #8b7575;
+    padding-bottom: 40px;
+}
+#logo_img{
+    width: 100px;
+    margin-top: 40px;
+    /* transform: translateY(-100px); */
+}
+.kino_logo h1{
+    color: #a39393;
+    /* transform: translateY(-90px); */
+    font-family: 'Poppins', sans-serif;
+}
+.signup_entry{
+    padding: 20px;
+    width: 400px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.signup_entry h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.warning{
+    width: 100%;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0px;
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #46464c;
+    display: none;
+}
+.warning h1{
+    top: 0px;
+    font-size: 18px;
+}
+.wrong{
+    border: 2px solid red;
+}
+.form_input{
+    padding: 20px;
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_input input{
+margin-top: 10px;
+margin-bottom: 10px;
+text-align: center;
+width: 250px;
+padding: 3px;
+border-radius: 10px;
+filter:brightness(0.8);
+}
+.form_input button{
+margin-top: 10px;
+margin-bottom: 10px;
+text-align: center;
+width: 120px;
+padding: 3px;
+border-radius: 6px;
+filter:brightness(0.8);
+}
+.display_image::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    opacity: 0.2;
+    z-index: -1;
+}
+.display_image{
+    position: relative;
+    /* padding: 20px; */
+    /* box-shadow: 2px 2px 2px white; */
+    box-sizing: border-box;
+    margin-top: 10px;
+    /* background-color: white; */
+    /* opacity: 0.1; */
+    /* display: flex; */
+    /* border: 2px solid yellow; */
+}
+.row{
+    display: flex;
+}
+.display_image img{
+   width: 80px;
+   margin: 5px;
+   /* box-shadow: 2px 2px 2px white; */
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+.existing_user h1{
+    font-size: 15px;
+}
+.existing_user a{
+    color: white;
+}
+@media (min-width: 0px) and (max-width: 930px)
+{
+.container{
+  flex-direction: column;
+}
+.kino_logo{
+  border-right: none;
+  border-bottom: 2px solid #8b7575;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  /* padding-bottom: 0px; */
+}
+.display_image{
+  display: none;
+}
+#logo_img{
+  margin-top: 0px;
+}
+}
+@media (min-width: 0px) and (max-width: 500px)
+{
+  .form_input{
+    width: 90%
+}
+  .form_input input{
+    width: 90%;
+    }
+    .signup_entry{
+      width: 80vw;
+      height: 440px;
+  }
+  .kino_logo{
+    width: auto;
+}
+.container{
+  margin-top: 20px;
+}
+
+}
+/* ---------------------------------------navbar 2 -------------------------------------------------- */
+@media (min-width: 0px) and (max-width: 1000px)
+{
+  .right{
+    display: none;
+  }
+  .left{
+   width: 80%;
+  }
+  .hamburger{
+    display: flex;
+  }
+  .sub-menu{
+    display: none;
+    background-color: rgba(31, 37, 51,0.7);
+    }
+    
+    .hamburger:hover .sub-menu{
+      display: block;
+      position: absolute;
+      list-style: none;
+      margin-top: 16.8em;
+      margin-left: -15px;
+    }
+    
+    .hamburger:hover .sub-menu ul{
+    list-style: none;
+    display: block;
+    }
+    
+    .hamburger:hover .sub-menu ul li{
+      width: 150px;
+      margin: 10px;
+      padding: 10px;
+      border-bottom: 1px solid wheat;
+    }
+    
+    .hamburger:hover .sub-menu ul li:last-child{
+      border-bottom: none;
+    }
+    .hamburger:hover .sub-menu ul li :first-child{
+      margin-top: 0;
+    }
+    .hamburger:hover .sub-menu ul li a:hover{
+      color: wheat;
+    }
+    .hamburger:hover .sub-menu ul li a{
+      color: white;
+      text-decoration: none;
+    }
+
+    .sub_menu{
+      display: none;
+      background-color:  rgba(31, 37, 51,0.7);
+    }
+
+    .dropdown a:hover .sub_menu{
+      display: list-item;
+      position: absolute;
+    }
+}
+/* --------------------------------------------navbar 2 end--------------------------------------------- */
+
+/* --------------------------------------navbar 3 --------------------------------------------------- */
+@media (min-width: 0px) and (max-width: 500px)
+{
+  .website_name{
+    margin-left: 4px;
+  }
+  .logo{
+    /* border: 2px solid green; */
+    width: 30px;
+  }
+  .head h2{
+    font-size: 25px;
+  }
+   .head h1{
+     margin-top: 9px;
+     font-size: 15px;
+  }
+}
+@media (min-width: 0px) and (max-width: 350px)
+{
+
+  .logo{
+    /* border: 2px solid green; */
+    width: 20px;
+  }
+  .head h2{
+    font-size: 20px;
+  }
+   .head h1{
+     margin-top: 6px;
+     font-size: 10px;
+  }
+}
+/* -------------------------------------- navbar 3 end ---------------------------------------------- */
+
+/* ----------------------------------------------navbar 4 ------------------------------------------ */
+/* signin */
+.sub-menu{
+    display: none;
+    background-color: rgba(31, 37, 51,0.7);
+    z-index: 1;
+    }
+    
+    #signin_link:hover .sub-menu{
+      display: block;
+      position: absolute;
+      list-style: none;
+      /* margin-top: 15px; */
+      margin-left: -15px;
+    }
+    
+    #signin_link:hover .sub-menu ul{
+    list-style: none;
+    display: block;
+    }
+    
+    #signin_link:hover .sub-menu ul li{ 
+      width: 150px;
+      margin: 10px;
+      padding: 10px;
+      border-bottom: 1px solid wheat;
+    }
+    #signin_link:hover .sub-menu ul li:last-child{
+      border-bottom: none;
+    }
+    #signin_link:hover .sub-menu ul li :first-child{
+      margin-top: 0;
+    }
+    #signin_link:hover .sub-menu ul li a:hover{
+      color: wheat;
+    }
+    
+    /* theater */
+    
+    .sub-menu{
+      display: none;
+      background-color: rgba(31, 37, 51,0.7);
+      }
+      
+      #theater:hover .sub-menu{
+        display: block;
+        position: absolute;
+        list-style: none;
+        /* margin-top: 15px; */
+        margin-left: -15px;
+        z-index: 1;
+      }
+      
+      #theater:hover .sub-menu ul{
+      list-style: none;
+      display: block;
+      }
+      
+      #theater:hover .sub-menu ul li{
+        width: 150px;
+        margin: 10px;
+        padding: 10px;
+        border-bottom: 1px solid wheat;
+      }
+      
+      #theater:hover .sub-menu ul li:last-child{
+        border-bottom: none;
+      }
+      #theater:hover .sub-menu ul li :first-child{
+        margin-top: 0;
+      }
+      #theater:hover .sub-menu ul li a:hover{
+        color: wheat;
+      }
+    
+      /* Movie */
+    
+    
+    .sub-menu{
+      display: none;
+      background-color: rgba(31, 37, 51,0.7);
+      }
+      
+      #Movie:hover .sub-menu{
+        display: block;
+        position: absolute;
+        list-style: none;
+        /* margin-top: 15px; */
+        margin-left: -15px;
+        z-index: 1;
+      }
+      
+      #Movie:hover .sub-menu ul{
+      list-style: none;
+      display: block;
+      }
+      
+      #Movie:hover .sub-menu ul li{
+        width: 150px;
+        margin: 10px;
+        padding: 10px;
+        border-bottom: 1px solid wheat;
+      }
+      
+      #Movie:hover .sub-menu ul li:last-child{
+        border-bottom: none;
+      }
+      #Movie:hover .sub-menu ul li :first-child{
+        margin-top: 0;
+      }
+      #Movie:hover .sub-menu ul li a:hover{
+        color: wheat;
+      }
+    
+      /* User-logo */
+    
+      .sub-menu{
+        display: none;
+        background-color: rgba(31, 37, 51,0.7);
+        }
+        
+        #user_logo:hover .sub-menu{
+          display: block;
+          position: absolute;
+          list-style: none;
+          /* margin-top: 15px; */
+          /* width: 80px; */
+          margin-left: -125px;
+          z-index: 1;
+        }
+        
+        #user_logo:hover .sub-menu ul{
+        list-style: none;
+        display: block;
+        }
+        
+        #user_logo:hover .sub-menu ul li{
+          width: 150px;
+          margin: 10px;
+          padding: 10px;
+          border-bottom: 1px solid wheat;
+        }
+        
+        #user_logo:hover .sub-menu ul li:last-child{
+          border-bottom: none;
+        }
+        #user_logo:hover .sub-menu ul li :first-child{
+          margin-top: 0;
+        }
+        #user_logo:hover .sub-menu ul li a:hover{
+          color: wheat;
+        }
+    
+        /* hamburger */
+    
+        .home{
+          padding: 5px 8px 5px 8px;
+        }
+       #hamburger_after_login{
+          display: none;
+       }
+  /* -------------------------------------- navbar 4 end ---------------------------------------------- */

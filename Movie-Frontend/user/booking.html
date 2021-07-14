@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link rel="icon" type="image/png" href="../assets/logo.png"/>
+    <link rel="stylesheet" href="booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <!-- --------------------------------- navbar 1------------------------------------------------------ -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- ------------------------------------------------------------------------------------------------ -->
+</head>
+<body>
+    <!-- ----------------------------------------------navbar 2 ------------------------------------------ -->
+<div class="navbar">
+    <div class="left">
+      <div class="website_name">
+        <span class="logo">
+          <img class="image" src="../assets/logo.png" />
+        </span>
+        <div class="head">
+          <h2>KINO</h2>
+          <h1>tickets.com</h1>
+        </div>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <img src="../assets/search_logo.png" alt="" class="fa fa-search">
+      </input>
+
+    </div>
+    </div>
+    <div class="right">
+      <a href="../index.html" class="home">Home</a>
+  
+      <div id="Movie">
+      <a href="../default/index.html">Movies</a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="../default/index.html"> Upcoming</a></li>
+            <li><a href="../default/index.html">Top rated</a></li>
+            <li><a href="../default/index.html">Now showing</a></li>
+          </ul>
+          </div>
+        </div>
+  
+      <div id="theater">
+      <a href="../default/index.html">Theaters</a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="../default/index.html"> Near you</a></li>
+            <li><a href="../default/index.html">Top rated</a></li>
+            <li><a href="../default/index.html">Cheapest</a></li>
+          </ul>
+          </div>
+          </div>
+    
+      <div id="signin_link">
+      <a href="../authentication/signin.html" >SignIn </a>
+        <div class="sub-menu">
+        <ul>
+          <li><a href="../authentication/signup.html">Register</a> </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="user_logo">
+      <a><img src="../assets/user_logo.png" alt="" id="user_logo_img"></a>
+      <div class="sub-menu">
+        <ul>
+          <li><a href="../user/profile.html"> My Profile</a></li>
+          <li><a href="../user/booking.html">Bookings</a></li>
+          <li><a href="#"class ="logout" onclick = "logout_user()">Log out</a></li>
+          </ul>
+          </div>
+      </div>
+  
+    </div>
+     <div class="hamburger">
+       <img src="../assets/hamburger.png" alt="">
+       <div class="sub-menu">
+        <ul>
+         <li><a href="../index.html"> Home
+            
+         </a></li>
+          <li><div class="dropdown"><a href="../default/index.html">Movie</a>
+            <div class="sub_menu">
+            <ul>
+              <li><a href="#"> Upcoming</a></li>
+              <li><a href="#">Top rated</a></li>
+              <li><a href="#">Now showing</a></li>
+            </ul>
+            </div>
+          </div></li>
+          <li><a href="../default/index.html"> Theaters</a></li>
+          <li id="hamburger_signin"><a href="../authentication/signin.html" > SignIn</a></li>
+          <ul id="hamburger_after_login">
+            <li><a href="../user/profile.html">My Profile</a></li>
+            <li><a href="../user/booking.html">My Bookings</a></li>
+            <li><a href="#" onclick = "logout_user()">Logout</a></li>
+          </ul>
+        </ul>
+        </div>
+     </div>
+   </div>
+  <!-- ------------------------------------navbar 2 end ----------------------------------------------- -->
+    <!-- <h1>Booking</h1> -->
+    <!-- <div class="container">
+        <div class="heading">
+            <h1>Bookings</h1>
+        </div>
+       <div class="ticket">
+           <div class="movie_image">
+               <img src="https://image.tmdb.org/t/p/w200/rTh4K5uw9HypmpGslcKd4QfHl93.jpg" alt="">
+           </div>
+           <div class="details">
+               <div class="status">
+                   <img src="../assets/booked_logo.png" alt="" class="booked_image">
+                   <img src="../assets/failed_logo.png" alt="" class="failed_image">
+               </div>
+               <div class="show_details">
+                   <ul>
+                       <li>Movie : Cruella</li>
+                       <li>Date : 02-07-2021</li>
+                       <li>Time : 11:50pm - 2:00am</li>
+                       <li>Seats : A1, A2, A3</li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+
+       
+    </div> -->
+    <!-- <div class="no_bookings">
+      <div class="sad_face">
+        <img src="../assets/smiley.png" alt="">
+      </div>
+      <div class="no_book_message">
+        <h1>No Bookings</h1>
+        <a href="">Book Now</a>
+      </div>
+    </div> -->
+    <script src="booking.js"></script>
+</body>
+</html>

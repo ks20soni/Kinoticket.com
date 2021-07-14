@@ -1,0 +1,562 @@
+/* ----------------------------navbar font --------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+/* -----------------------navbar font end---------------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  /* background-color: #24262b; */
+  background-color: #212839;
+}
+/* --------------------------------------- navbar 1 -------------------------------------------------- */
+.navbar{
+  width: 100%;
+  /* height: 70px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border: 2px solid red; */
+  background-color: rgb(31, 37, 51);
+  display: flex;
+}
+.left{
+  width: 60%;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+}
+.website_name{
+  display:flex;
+  color: #c9c1f0;
+  margin-left: 14px;
+}
+.logo{
+  /* border: 2px solid green; */
+  width: 40px;
+  display: flex;
+  align-items: center;
+}
+.logo .image{
+width: 100%;
+ 
+ }
+.head {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+ .head h2{
+  /* right:0px; */
+  font-family: 'Passion One', cursive;
+  /* margin-top: 0px; */
+  font-size: 40px;
+  color:rgb(252, 107, 23);
+  margin-left: 4px;
+}
+ .head h1{
+   margin-left: 2px;
+   font-family: 'Passion One', cursive;
+   margin-top: 9px;
+   color: #f3c13b;
+   font-size: 23px;
+}
+
+.search{
+  display:flex;
+  width: 50%;
+  align-items: center;
+  /* margin-left: 200px; */
+
+}
+.search input{
+  width: 100%;
+  padding: 7px;
+  /* box-sizing: border-box; */
+  border-radius: 6px;
+  margin-left: 10px;
+  background-color: rgba(255,255,255,0.8);
+  /* background-color: #dce4e1; */
+}
+.fa{
+ cursor:pointer; 
+ /* font-size:40px; */
+ filter: invert(1);
+ /* border: 2px solid red; */
+ width: 21px;
+ margin-left: 3px;
+}
+
+.right{
+  width: 40%;
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right a{
+ text-decoration: none;
+   color: #ffffff;
+ ;
+ margin-right: 40px;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 17px;
+}
+.slider_parent{
+  margin-top: 20px;
+  margin-bottom: 20px;
+display: flex;
+justify-content: center;
+/* background-color: rgb(255, 255, 255,0.2); */
+}
+.hamburger{
+  display: none;
+  width: 20%;
+  /* border: 2px solid brown; */
+  justify-content: flex-end;
+  align-items: center;
+}
+.hamburger img{
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+}
+/* #signin_link{
+  
+} */
+#user_logo{
+  display: none;
+}
+#user_logo_img{
+  margin-top: 5px;
+  width: 33px;
+}
+/* -----------------------------navbar 1 end ------------------------------------------------------- */
+
+
+
+.open{
+    background-image: url("../../assets/rows-red-seats-theater.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 60vh;
+/* margin-top: 20px; */
+}
+.open h1{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 22%;
+    font-size: 140px;
+    font-family: 'Passion One', cursive;
+}
+
+.open h3{
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 20%;
+  font-size: 100px;
+  font-family: 'Passion One', cursive;
+}
+
+.makers{
+  background-color: azure;
+  /* margin-top: 20px; */
+  /* border: 2px solid red; */
+}
+/* Three columns side by side */
+.column {
+  /* float: left; */
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  height: 25em;
+  margin-top: 30px;
+  display: inline-block;
+  justify-content: center;
+position: relative;
+left: 40px;
+top: 15px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 80%;
+    display: block;
+  }
+}
+@media screen and (max-width:927px){
+  .column{
+    width: 80%;
+    display: block;
+  }
+  .open h1{
+    font-size: 90px;
+  }
+  .open h3{
+    font-size: 70px;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img{
+  width: 2em;
+  height: 12em;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+  height: 10em;
+  text-align: center;
+}
+
+.container h2{
+  margin: 10px;
+}
+
+/* Clear floats */
+/* .container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+.title {
+  color: grey;
+  margin: 10px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* ---------------------------------------navbar 2 -------------------------------------------------- */
+@media (min-width: 0px) and (max-width: 1000px)
+{
+  .right{
+    display: none;
+  }
+  .left{
+   width: 80%;
+  }
+  .hamburger{
+    display: flex;
+  }
+  .sub-menu{
+    display: none;
+    background-color: rgba(31, 37, 51,0.7);
+    }
+    
+    .hamburger:hover .sub-menu{
+      display: block;
+      position: absolute;
+      list-style: none;
+      margin-top: 16.8em;
+      margin-left: -15px;
+    }
+    
+    .hamburger:hover .sub-menu ul{
+    list-style: none;
+    display: block;
+    }
+    
+    .hamburger:hover .sub-menu ul li{
+      width: 150px;
+      margin: 10px;
+      padding: 10px;
+      border-bottom: 1px solid wheat;
+    }
+    
+    .hamburger:hover .sub-menu ul li:last-child{
+      border-bottom: none;
+    }
+    .hamburger:hover .sub-menu ul li :first-child{
+      margin-top: 0;
+    }
+    .hamburger:hover .sub-menu ul li a:hover{
+      color: wheat;
+    }
+    .hamburger:hover .sub-menu ul li a{
+      color: white;
+      text-decoration: none;
+    }
+
+    .sub_menu{
+      display: none;
+      background-color:  rgba(31, 37, 51,0.7);
+    }
+
+    .dropdown a:hover .sub_menu{
+      display: list-item;
+      position: absolute;
+    }
+}
+/* --------------------------------------------navbar 2 end--------------------------------------------- */
+
+/* --------------------------------------navbar 3 --------------------------------------------------- */
+@media (min-width: 0px) and (max-width: 500px)
+{
+  .website_name{
+    margin-left: 4px;
+  }
+  .logo{
+    /* border: 2px solid green; */
+    width: 30px;
+  }
+  .head h2{
+    font-size: 25px;
+  }
+   .head h1{
+     margin-top: 9px;
+     font-size: 15px;
+  }
+}
+@media (min-width: 0px) and (max-width: 350px)
+{
+
+  .logo{
+    /* border: 2px solid green; */
+    width: 20px;
+  }
+  .head h2{
+    font-size: 20px;
+  }
+   .head h1{
+     margin-top: 6px;
+     font-size: 10px;
+  }
+}
+/* -------------------------------------- navbar 3 end ---------------------------------------------- */
+
+/* ----------------------------------------------navbar 4 ------------------------------------------ */
+/* signin */
+.sub-menu{
+  display: none;
+  background-color: rgba(31, 37, 51,0.7);
+  z-index: 1;
+  }
+  
+  #signin_link:hover .sub-menu{
+    display: block;
+    position: absolute;
+    list-style: none;
+    /* margin-top: 15px; */
+    margin-left: -15px;
+  }
+  
+  #signin_link:hover .sub-menu ul{
+  list-style: none;
+  display: block;
+  }
+  
+  #signin_link:hover .sub-menu ul li{ 
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px solid wheat;
+  }
+  #signin_link:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+  }
+  #signin_link:hover .sub-menu ul li :first-child{
+    margin-top: 0;
+  }
+  #signin_link:hover .sub-menu ul li a:hover{
+    color: wheat;
+  }
+  
+  /* theater */
+  
+  .sub-menu{
+    display: none;
+    background-color: rgba(31, 37, 51,0.7);
+    }
+    
+    #theater:hover .sub-menu{
+      display: block;
+      position: absolute;
+      list-style: none;
+      /* margin-top: 15px; */
+      margin-left: -15px;
+      z-index: 1;
+    }
+    
+    #theater:hover .sub-menu ul{
+    list-style: none;
+    display: block;
+    }
+    
+    #theater:hover .sub-menu ul li{
+      width: 150px;
+      margin: 10px;
+      padding: 10px;
+      border-bottom: 1px solid wheat;
+    }
+    
+    #theater:hover .sub-menu ul li:last-child{
+      border-bottom: none;
+    }
+    #theater:hover .sub-menu ul li :first-child{
+      margin-top: 0;
+    }
+    #theater:hover .sub-menu ul li a:hover{
+      color: wheat;
+    }
+  
+    /* Movie */
+  
+  
+  .sub-menu{
+    display: none;
+    background-color: rgba(31, 37, 51,0.7);
+    }
+    
+    #Movie:hover .sub-menu{
+      display: block;
+      position: absolute;
+      list-style: none;
+      /* margin-top: 15px; */
+      margin-left: -15px;
+      z-index: 1;
+    }
+    
+    #Movie:hover .sub-menu ul{
+    list-style: none;
+    display: block;
+    }
+    
+    #Movie:hover .sub-menu ul li{
+      width: 150px;
+      margin: 10px;
+      padding: 10px;
+      border-bottom: 1px solid wheat;
+    }
+    
+    #Movie:hover .sub-menu ul li:last-child{
+      border-bottom: none;
+    }
+    #Movie:hover .sub-menu ul li :first-child{
+      margin-top: 0;
+    }
+    #Movie:hover .sub-menu ul li a:hover{
+      color: wheat;
+    }
+  
+    /* User-logo */
+  
+    .sub-menu{
+      display: none;
+      background-color: rgba(31, 37, 51,0.7);
+      }
+      
+      #user_logo:hover .sub-menu{
+        display: block;
+        position: absolute;
+        list-style: none;
+        /* margin-top: 15px; */
+        /* width: 80px; */
+        margin-left: -125px;
+        z-index: 1;
+      }
+      
+      #user_logo:hover .sub-menu ul{
+      list-style: none;
+      display: block;
+      }
+      
+      #user_logo:hover .sub-menu ul li{
+        width: 150px;
+        margin: 10px;
+        padding: 10px;
+        border-bottom: 1px solid wheat;
+      }
+      
+      #user_logo:hover .sub-menu ul li:last-child{
+        border-bottom: none;
+      }
+      #user_logo:hover .sub-menu ul li :first-child{
+        margin-top: 0;
+      }
+      #user_logo:hover .sub-menu ul li a:hover{
+        color: wheat;
+      }
+  
+      /* hamburger */
+  
+      .home{
+        padding: 5px 8px 5px 8px;
+      }
+     #hamburger_after_login{
+        display: none;
+     }
+/* -------------------------------------- navbar 4 end ---------------------------------------------- */
+/* ----------------------------------- footer --------------------------------------------------------*/
+.footer{
+  height: 250px;
+  background-color: #212839;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kinologo{
+  /* border: 2px solid red; */
+  text-align: center;
+}
+.kinologo img{
+  width: 60px;
+}
+.social{
+  display: flex;
+  /* border: 2px solid blue; */
+  justify-content: center;
+}
+.social img{
+  width: 40px;
+  border-radius: 15px;
+  margin: 5px;
+}
+.extra_pages{
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+}
+.extra_pages ul{
+  padding-top: 10px;
+  display: flex;
+}
+.extra_pages ul li{
+  list-style: none;
+}
+.extra_pages ul li a{
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+}
+/* ----------------------------------------footer end ------------------------------------------------ */
